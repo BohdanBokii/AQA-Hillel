@@ -1,7 +1,7 @@
 public class Test {
     public static void main(String[] args) {
 
-        Size size = Size.SMALL;
+        Size size = Size.EXTRA_LARGE;
 
         switch (size) {
 

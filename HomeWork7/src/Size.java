@@ -4,18 +4,18 @@ public enum Size {
     LARGE("L", 17, 32),
     EXTRA_LARGE("XL", 23, 43);
 
-    private String format;
+    private String abbreviation;
     private int width;
     private int length;
 
     Size(String format, int width, int length) {
-        this.format = format;
+        this.abbreviation = format;
         this.width = width;
         this.length = length;
     }
 
-    public String getFormat() {
-        return format;
+    public String getAbbreviation() {
+        return abbreviation;
     }
 
     public int getWidth() {
@@ -29,7 +29,7 @@ public enum Size {
     @Override
     public String toString() {
         return String.format("%s or %s size: width = %d, length = %d.",
-                getFormat(),
+                getAbbreviation(),
                 super.toString(),
                 getWidth(),
                 getLength());
