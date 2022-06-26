@@ -6,7 +6,7 @@ public class Test {
         switch (size) {
 
             case LARGE:
-            case Medium:
+            case MEDIUM:
             case SMALL:
             case EXTRA_LARGE:
                 System.out.println(size);
