@@ -6,21 +6,21 @@ public class Cat extends Animal implements Pet {
 
     @Override
     public void greets() {
-        System.out.println("Cat {name} says: Meow");
+        System.out.println(super.getName() + " says: Meow");
     }
 
     @Override
     public void feed() {
-        System.out.println("Feeding cat {name}");
+        System.out.println("Feeding " + super.getName());
     }
 
     @Override
     public void walk() {
-        System.out.println("Walking cat {name}");
+        System.out.println("Walking " + super.getName());
     }
 
     @Override
     public void play() {
-        System.out.println("Playing with cat {name}");
+        System.out.println("Playing " + super.getName());
     }
 }

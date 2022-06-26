@@ -6,7 +6,7 @@ public class Dog extends Animal implements Pet{
 
     @Override
     public void greets() {
-        System.out.println("Dog {name} says: Woof");
+        System.out.println(super.getName() + " says Woof");
     }
 
     public void greets (Dog another) {
@@ -15,16 +15,16 @@ public class Dog extends Animal implements Pet{
 
     @Override
     public void feed() {
-        System.out.println("Feeding dog {name}");
+        System.out.println("Feeding " + super.getName());
     }
 
     @Override
     public void walk() {
-        System.out.println("Walking dog {name}");
+        System.out.println("Walking " + super.getName());
     }
 
     @Override
     public void play() {
-        System.out.println("Playing with dog {name}");
+        System.out.println("Playing with " + super.getName());
     }
 }
