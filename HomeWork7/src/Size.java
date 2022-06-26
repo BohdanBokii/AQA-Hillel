@@ -8,8 +8,8 @@ public enum Size {
     private int width;
     private int length;
 
-    Size(String format, int width, int length) {
-        this.abbreviation = format;
+    Size(String abbreviation, int width, int length) {
+        this.abbreviation = abbreviation;
         this.width = width;
         this.length = length;
     }
