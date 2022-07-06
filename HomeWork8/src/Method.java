@@ -40,7 +40,7 @@ public class Method {
     /*Method returns unique values with case sensitivity*/
     private String[] GetUniqueNonEmptyWords(String[] words) {
         Set<String> uniqueWords = new TreeSet<>(String.CASE_INSENSITIVE_ORDER);
-
+        /*Empty string check*/
         for (String word : words) {
             if (word.isEmpty())
                 continue;
