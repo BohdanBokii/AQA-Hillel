@@ -51,7 +51,7 @@ public class Method {
         /*List to array*/
         return uniqueWords.toArray(new String[uniqueWords.size()]);
     }
-        /*Iterates over letters, lowercase, uppercase the first letter of each word*/
+        /*Iterates over words,transform lowercase,change the capitalization of first letter of each word*/
     private void FirstLetterToUppercase(String[] words) {
         for (int i = 0; i < words.length; i++) {
             String firstLetter = words[i].substring(0, 1);
