@@ -1,13 +1,14 @@
 import java.util.*;
 
 public class Method {
-    public String Input() {
+    //User input
+    public String Input() {  
         Scanner scanner = new Scanner(System.in);
         System.out.println("Input sentence");
         String str = scanner.nextLine();
         return str;
     }
-
+    
     public void ProcessList(String input) {
         String[] words = ReplaceAndSplit(input);
         words = GetUniqueNonEmptyWords(words);
