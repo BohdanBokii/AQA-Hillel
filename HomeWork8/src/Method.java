@@ -38,7 +38,7 @@ public class Method {
 
         return words;
     }
-    /*Method returns unique values with case sensitive*/
+    /*Method returns unique values with case insensitive*/
     private String[] GetUniqueNonEmptyWords(String[] words) {
         Set<String> uniqueWords = new TreeSet<>(String.CASE_INSENSITIVE_ORDER);
         /*Empty string check*/
