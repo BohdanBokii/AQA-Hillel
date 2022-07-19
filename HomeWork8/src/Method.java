@@ -1,13 +1,14 @@
 import java.util.*;
 
 public class Method {
-    public String Input() {
+    //User input
+    public String Input() {  
         Scanner scanner = new Scanner(System.in);
         System.out.println("Input sentence");
         String str = scanner.nextLine();
         return str;
     }
-
+    
     public void ProcessList(String input) {
         String[] words = ReplaceAndSplit(input);
         words = GetUniqueNonEmptyWords(words);
@@ -37,7 +38,7 @@ public class Method {
 
         return words;
     }
-    /*Method returns unique values with case sensitivity*/
+    /*Method returns unique values with case insensitive*/
     private String[] GetUniqueNonEmptyWords(String[] words) {
         Set<String> uniqueWords = new TreeSet<>(String.CASE_INSENSITIVE_ORDER);
         /*Empty string check*/
@@ -50,7 +51,7 @@ public class Method {
         /*List to array*/
         return uniqueWords.toArray(new String[uniqueWords.size()]);
     }
-
+        /*Iterates over words,transform to lowercase,change the capitalization of each word*/
     private void FirstLetterToUppercase(String[] words) {
         for (int i = 0; i < words.length; i++) {
             String firstLetter = words[i].substring(0, 1);
