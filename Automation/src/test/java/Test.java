@@ -10,16 +10,16 @@ public class Test {
     static final String BASEURL = "https://ithillel.ua/";
 
     public static void main(String[] args) {
-/*        WebDriver driver = DriverFactory.getDriver(BROWSER.CHROME);
+        /*--------------------------------------------HomeWork9------------------------------------*/
+        /*WebDriver driver = DriverFactory.getDriver(BROWSER.CHROME);
         driver.get(BASEURL);
 
-        *//*Checking the loading of page by element*//*
+        //Checking the loading of page by element
         System.out.println(driver.findElement(By.id("btn-consultation-hero")).isDisplayed());
-        *//*Checking the loading of a particular element*//*
+        //Checking the loading of a particular element
         System.out.println(driver.findElement(SEARCH).isDisplayed());
-
         driver.quit();*/
-
+        /*------------------------------------------HomeWork11------------------------------------*/
         JavaBasic page = new JavaBasic();
         System.out.println(page.getCourseTitle());
         System.out.println(page.getCourseRate());
@@ -28,3 +28,4 @@ public class Test {
         page.quit();
     }
 }
+
