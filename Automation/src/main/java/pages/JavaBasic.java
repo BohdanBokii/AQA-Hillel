@@ -1,15 +1,13 @@
 package pages;
-import DriverConfig.BROWSER;
-import DriverConfig.DriverFactory;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 /*------------------------------------------HomeWork11------------------------------------*/
 public class JavaBasic {
-
     private WebDriver driver;
 
-    static final String BASEURL = "https://ithillel.ua/courses/java-basic";
+    public static final String BASEURL = "https://ithillel.ua/courses/java-basic";
 
     public String getCourseTitle() {
         return driver.getTitle();
@@ -25,12 +23,7 @@ public class JavaBasic {
         return driver.findElement(By.xpath(selector)).getText();
     }
 
-    public JavaBasic() {
-        this.driver = DriverFactory.getDriver(BROWSER.CHROME);
-        driver.get(BASEURL);
+    public JavaBasic(WebDriver driver) {
+        this.driver = driver;
     }
-
-   public void quit() {
-       driver.quit();
-   }
 }
