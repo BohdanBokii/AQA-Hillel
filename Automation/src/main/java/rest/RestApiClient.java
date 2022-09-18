@@ -1,6 +1,5 @@
 package rest;
 
-import com.sun.javaws.exceptions.InvalidArgumentException;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.CloseableHttpClient;
