@@ -1,6 +1,7 @@
 package DriverConfig;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class DriverFactory {
@@ -14,7 +15,6 @@ public class DriverFactory {
                 driver = initFirefox();
                 break;
         }
-
         return driver;
     }
 
@@ -23,6 +23,8 @@ public class DriverFactory {
     }
 
     private static WebDriver initChrome() {
-        return new ChromeDriver();
+        ChromeOptions options = new ChromeOptions();
+        options.setBinary("C:\\Users\\stan_\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe");
+        return new ChromeDriver(options);
     }
 }
