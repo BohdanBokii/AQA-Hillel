@@ -10,7 +10,7 @@ import util.Util;
 import java.util.Arrays;
 import java.util.Collection;
 
-@RunWith(Parameterized.class)
+/*@RunWith(Parameterized.class)
 public class TestsBlogItHillel extends Base {
     private Integer expectedCountOfNews;
     private String topic;
@@ -58,9 +58,9 @@ public class TestsBlogItHillel extends Base {
         Assert.assertNotEquals(0, count);
         Assert.assertEquals((long)expectedCountOfNews, count);
     }
-}
+}*/
 
-/*@RunWith(Parameterized.class)
+@RunWith(Parameterized.class)
 public class TestsBlogItHillel extends Base {
     private static final String BASEURL = "https://ithillel.ua/";
     private static BlogItHillel Blog;
@@ -102,5 +102,5 @@ public class TestsBlogItHillel extends Base {
             System.out.println(topic + " news: " + count);
             Assert.assertNotEquals(0, count);
         }
-    }*/
+    }
 
