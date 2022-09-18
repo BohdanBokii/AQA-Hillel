@@ -4,9 +4,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-import java.nio.file.Path;
-import java.nio.file.Paths;
-
 public class DriverFactory {
     public static WebDriver getDriver(BROWSER browser) {
         WebDriver driver = null;
@@ -27,11 +24,7 @@ public class DriverFactory {
 
     private static WebDriver initChrome() {
         ChromeOptions options = new ChromeOptions();
-        String dataFolder = System.getenv("LOCALAPPDATA");
-        String chromeExe = "Google\\Chrome\\Application\\chrome.exe";
-        Path chromeDrivePath = Paths.get(dataFolder, chromeExe);
-
-        options.setBinary(chromeDrivePath.toString());
+        options.setBinary("C:\\Users\\stan_\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe");
         return new ChromeDriver(options);
     }
 }
