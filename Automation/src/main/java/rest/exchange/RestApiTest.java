@@ -1,4 +1,4 @@
-package rest;
+package rest.exchange;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -6,6 +6,7 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
+import rest.RestApiClient;
 import rest.exchange.ExchangeObject;
 
 import java.util.Arrays;

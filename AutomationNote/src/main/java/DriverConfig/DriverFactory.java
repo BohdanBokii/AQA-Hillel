@@ -1,12 +1,12 @@
+package DriverConfig;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class DriverFactory {
-
-    public static WebDriver getDriver(String brows) {
+    public static WebDriver getDriver(BROWSER brows) {
         WebDriver driver = null;
-        BROWSER browser = BROWSER.valueOf(brows);
+        BROWSER browser = brows;
         switch (browser) {
             case CHROME:
                 driver = initChrome();
@@ -27,4 +27,3 @@ public class DriverFactory {
         return new ChromeDriver();
     }
 }
-
